@@ -1,5 +1,10 @@
+4/2/14
 1) Get familiar with LeapMotion. We probably should use the Pointable and Gesture classes in the API. "Tapping" should shoot, as the controller seems to have a hard time recognizing both thumb and index finger at the same time. Index finger is a pointable object, so we should use the Vector class to get the vector that extends from it. We will need to import that into Unity whenever a tap is registered.
 
 2) Vectors seem to have a fairly significant vertical limitation-- they can't point up more than about thirty degrees from horizontal. This could potentially be solved by placing the controller on a slope and diagonal to the hand. To do this, however, we need to look into re-orienting the controller. Look into this.
 
 3) When we have the above problems solved, we can begin working with the Oculus in Unity and adding some things to point at.
+
+4/3/14
+1.1) Look at UnitySandbox example in SDK. It does a lot of what we need, and we should probably be trying to modify it. Specifically, start with LeapUnitySelectionController class. (C:\Users\jmb113\Downloads\LeapDeveloperKit_release_win_1.0.9+8391\LeapDeveloperKit\Examples\UnitySandbox)
+Changing (even completely deleting) this class doesn't seem to affect the way the demo runs. Why?
