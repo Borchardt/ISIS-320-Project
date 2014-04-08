@@ -13,4 +13,7 @@ Changing (even completely deleting) this class doesn't seem to affect the way th
 meow: copy of UnitySandbox example
 meowver1: checkShouldTransform, checkShouldRotate, and checkShouldScale all set to false to remove object manipulation
 meowver2: GUI file changed to remove enabling/disabling of manipulation text
-meowver3: look at LeapFingerCollisionDispatcher; try changing KHitDistance and Debug.DrawRay to make ray distance infinite and display it as such.
+
+4/7/14:
+meowver3: change LeapUnityBridge to only recognize one finger
+meowver4: look at LeapFingerCollisionDispatcher; try changing KHitDistance and Debug.DrawRay to make ray distance infinite and display it as such.
