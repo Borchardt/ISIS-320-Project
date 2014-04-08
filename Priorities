@@ -16,4 +16,4 @@ meowver2: GUI file changed to remove enabling/disabling of manipulation text
 
 4/7/14:
 meowver3: change LeapUnityBridge to only recognize one finger
-meowver4: look at LeapFingerCollisionDispatcher; try changing KHitDistance and Debug.DrawRay to make ray distance infinite and display it as such. Alternately, try changing updatePointable in LeapUnityHandController.
+meowver4: look at LeapFingerCollisionDispatcher; try changing KHitDistance and Debug.DrawRay to make ray distance infinite and display it as such. Alternately, try changing updatePointable in LeapUnityHandController. Also, add ScreenTapGesture to trigger collision detection (see https://developer.leapmotion.com/documentation/python/api/Leap.ScreenTapGesture.html).
