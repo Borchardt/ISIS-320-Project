@@ -17,3 +17,6 @@ meowver2: GUI file changed to remove enabling/disabling of manipulation text
 4/7/14:
 meowver3: change LeapUnityBridge to only recognize one finger
 meowver4: look at LeapFingerCollisionDispatcher; try changing KHitDistance and Debug.DrawRay to make ray distance infinite and display it as such. Alternately, try changing updatePointable in LeapUnityHandController. Also, add ScreenTapGesture to trigger collision detection (see https://developer.leapmotion.com/documentation/python/api/Leap.ScreenTapGesture.html).
+
+4/11/14:
+meowver4: collision detection along ray from finger is working. Dave helped me add a cube object with tiny width and depth and long length that basically looks like a ray, and we have it set up so that when a ray drawn from the fingertip intersects with any object other than that cube (ourRay), ourRay changes colors to reflect a collision. It's important that ourRay not have a collision detector, otherwise it will overlap with the ray drawn from the fingertip, and it will change colors unexpectedly.
