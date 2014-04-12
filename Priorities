@@ -22,3 +22,6 @@ meowver4: look at LeapFingerCollisionDispatcher; try changing KHitDistance and D
 meowver4: collision detection along ray from finger is working. Dave helped me add a cube object with tiny width and depth and long length that basically looks like a ray, and we have it set up so that when a ray drawn from the fingertip intersects with any object other than that cube (ourRay), ourRay changes colors to reflect a collision. It's important that ourRay not have a collision detector, otherwise it will overlap with the ray drawn from the fingertip, and it will change colors unexpectedly.
 meowver5: TODO: change cube behavior so that it changes to green whenever ourRay does.
 meowver6: TODO: add ScreenTapGesture. Collision detection should only take place during gesture.
+
+4/12/14:
+meowver5: Cube is highlighted when it intersects with ray. Previously, only the ray was highlighted; cube remained same color unless touched by finger. TODO: remove highlighting when finger touches.
