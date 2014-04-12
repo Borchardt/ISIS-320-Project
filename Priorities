@@ -24,4 +24,4 @@ meowver5: TODO: change cube behavior so that it changes to green whenever ourRay
 meowver6: TODO: add ScreenTapGesture. Collision detection should only take place during gesture.
 
 4/12/14:
-meowver5: Cube is highlighted when it intersects with ray. Previously, only the ray was highlighted; cube remained same color unless touched by finger. TODO: remove highlighting when finger touches.
+meowver5: Cube is highlighted when it intersects with ray. Previously, only the ray was highlighted; cube remained same color unless touched by finger. Changes made to Raycast section of LeapFingerCollisionDispatcher. TODO: remove highlighting when finger touches.
