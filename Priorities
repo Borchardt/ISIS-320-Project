@@ -39,6 +39,6 @@ TODO:
 5) Try to stop finger touching from highlighting objects
 6) If there's still time, try adding other objects downloaded from online
 
-meowver8: Fixed problem of shot ray moving with finger after screen tap by adding rayDrawn variable, changing it to true after detecting a screen tap, and using Invoke() to wait .1 seconds before changing it to false again. Frame history for GestureList for screen taps also had to be decreased from 50 to 5, as when it was 50, it was possible to complete a screen tap that lasted longer than the .1 second wait, which caused unpredictable behavior. .1 seconds was chosen because it allows users to "fire" rapidly but is still long enough to detect a screen tap.
+meowver8: Fixed problem of shot ray moving with finger after screen tap by adding rayDrawn variable to LeapFingerCollisionDispatcher, changing it to true after detecting a screen tap, and using Invoke() to wait .1 seconds before changing it to false again. Frame history for GestureList for screen taps also had to be decreased from 50 to 5, as when it was 50, it was possible to complete a screen tap that lasted longer than the .1 second wait, which caused unpredictable behavior. .1 seconds was chosen because it allows users to "fire" rapidly but is still long enough to detect a screen tap.
 
 
