@@ -32,13 +32,17 @@ meowver7: Added Oculus Rift support.
 
 4/13/14:
 TODO:
-1) Add debug mode that draws ourRay all the time
-2) Add countdown timer and hit counter to GUI
-3) Add highlighting to objects other than cube
+1) Add debug mode that draws ourRay all the time. DONE
+2) Add countdown timer and hit counter to GUI. DONE
+3) Add highlighting to objects other than cube. DONE
 4) Try to stop ourRay from moving after first drawn. DONE
-5) Try to stop finger touching from highlighting objects
+5) Try to stop finger touching from highlighting objects. DONE
 6) If there's still time, try adding other objects downloaded from online
 
 meowver8: Fixed problem of shot ray moving with finger after screen tap by adding rayDrawn variable to LeapFingerCollisionDispatcher, changing it to true after detecting a screen tap, and using Invoke() to wait .1 seconds before changing it to false again. Frame history for GestureList for screen taps also had to be decreased from 50 to 5, as when it was 50, it was possible to complete a screen tap that lasted longer than the .1 second wait, which caused unpredictable behavior. .1 seconds was chosen because it allows users to "fire" rapidly but is still long enough to detect a screen tap.
 
+meowver9: See TODO list for same day. All items but number 4, which was accomplished in version 8, were accomplished in this update. In MainMenu, I wrote a countdown timer and keypress logic to control it and toggle a debugging mode that I implemented in LeapFingerCollisionDispatcher. I also wrote a counter to keep track of # of hits on target and added GUI labels to display that number, as well as the number of seconds on the countdown timer and the debugging status. I pretty much completely overhauled highlighting by removing about 100 lines of sample code (much of which was unnecessary for me) from LeapUnitySelectionController and adding highlighting functionality to LeapFingerCollisionDispatcher; it isn't as pretty now, but it's more controllable for me and now working for all objects.
+
+TODO:
+Visual improvements. All core functionality is working.
 
