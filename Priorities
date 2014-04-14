@@ -28,6 +28,9 @@ meowver5: Cube is highlighted when it intersects with ray. Previously, only the 
 meowver6: Massive changes. Added recognition for screen tap gestures in LeapInput. Added function to return GestureList in LeapUnitySelectionController, and every time a screentap is added to that GestureList, a variable in LeapFingerCollisionDispatcher is set to true. Ray detection from finger only happens when that variable is true; for every frame when no screen tap is detected, it is set to false. Thus, ourRay only appears after "shots," as desired. Color changes still work properly.
 
 4/13/14:
+meowver7: Added Oculus Rift support.
+
+4/13/14:
 TODO:
 1) Add debug mode that draws ourRay all the time
 2) Add countdown timer and hit counter to GUI
